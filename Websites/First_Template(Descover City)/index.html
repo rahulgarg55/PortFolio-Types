@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font family -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Slider Theme CSS -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- Slider CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/82c02b2e0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+        <title>Hello, world!</title>
+</head>
+<body>
+    <!-- Header-container -->
+    <div id="header-container">
+
+        <!-- header-Logo -->
+        <div class="header-item" id="header-logo">
+            <img src="images/logo.png" alt="Logo" >
+        </div>
+
+        <!-- header-menu -->
+        <div class="header-item" id="header-menu">
+
+            <div class="menu-box" id="menu-box-1">
+                <div class="submenu" id="submenu1">
+                    <ul>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <a href="#">Home</a>
+                <i class="arrow down"></i>
+            </div>
+
+            <div class="menu-box" id="menu-box-2">
+                <a href="#">More info</a>
+               
+            </div>
+
+            <div class="menu-box" id="menu-box-3">
+                <div class="submenu" id="submenu3">
+                    <ul>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <a href="#">Examples</a>
+                <i class="arrow down"></i>
+                
+            </div>
+
+            <div class="menu-box" id="menu-box-4">
+                <a href="#">Submit listing</a>
+               
+            </div>
+
+            <div class="menu-box" id="menu-box-5">
+                <div class="submenu" id="submenu5">
+                    <ul>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <a href="#">Margins</a>
+                <i class="arrow down"></i>
+
+            </div>
+
+            <div class="menu-box" id="menu-box-6">
+                <div class="submenu" id="submenu6">
+                    <ul>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <a href="#">Elements</a>
+                <i class="arrow down"></i>
+
+            </div>
+
+            <div class="menu-box" id="menu-box-7">
+                <div class="submenu" id="submenu7">
+                    <ul>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <a href="#"><span><i class="fas fa-bars"></i></span></a>
+            </div>
+
+        </div>
+
+        <!-- header-menu-tools -->
+        <div class="header-item" id="header-menu-tools">
+            <div class="tools" id="tool1"><a href="#">33</a></div>
+            <div class="tools" id="tool2"><a href="#">Add</a></div>
+            <div class="tools" id="tool3"><a href="#"><i class="far fa-user"></i></a></div>
+            <div class="tools" id="tool4"><a href="#"><i class="fas fa-globe"></i></a></div>
+            <div class="tools" id="tool5"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+        </div>
+
+    </div>
+
+    <!-- Main Body--------------------------------- -->
+    <div id="search-page">
+        <div class="search-items" id="search-header"><h1>Explore and discover many <br> fine places in your city</h1></div>
+        <div class="search-items" id="search-input">
+           <div id="search-box">
+            <i class="search-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </i>
+             <input type="search" placeholder="search keyword"> 
+           </div> 
+            <input type="button" value="SEARCH">
+        </div>
+        <div class="search-items" id="search-p">Refine your search with categories, locations and radius of your position</div>
+        <div class="search-items" id="search-helper-btn">
+            <div class="search-btn">
+                <i class="far fa-folder"></i>
+            </div>
+            <div class="search-btn">
+                <i class="fas fa-map-marker-alt"></i>
+                
+            </div>
+            <div class="search-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Slider -->
+    <div id="icon-slider-container">
+
+        <div class="icon-slider">
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="icon-items">
+                <a href="#">
+                    <div class="slider-icon">
+                        <img src="images/icon.png" alt="Travel &amp; Transport" width="50" height="50">
+                    </div>
+                    <div class="slider-p">
+                        <h4>Travel &amp; <br>Transport</h4>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Feature  -->
+    <div id="feature-container">
+
+        <div id="feature-heading">
+            <h1>Featured Places</h1>
+        </div>
+
+        <div class="fs-container">
+            <!-- 1st Item    ------------------------------------------ -->
+            <div class="fs-item-outer">
+                <div class="fs-item">
+
+                    <div class="fs-item-bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="fs-item-info">
+                        <div class="fs-item-info-icon">
+                            <i class="search-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="fs-item-info-data">
+                            Suspendisse cursus felis eu arcu dictum, eu accumsan orci porta. Fusce et pretium leo, quis
+                            sodales quam. Ut auctor sodales tellus in molestie. Vivamus semper quam nec nibh posuere, a
+                            elementum nulla placerat.
+                        </div>
+                    </div>
+
+                    <div class="fs-item-img">
+                        <img src="images/burger.jpg" alt="burger" height="200">
+                    </div>
+
+                    <div class="fs-item-h">
+                        <h2>Y&M Hamburger</h2>
+
+                    </div>
+
+                    <div class="fs-item-p">
+                        <p>Colorful Hamburger Variations</p>
+                    </div>
+
+                    <div class="fs-item-tags-container">
+                        <div class="fs-item-tags">
+                            Fast Food
+                        </div>
+                        <div class="fs-item-tags">
+                            Restaurant
+                        </div>
+                    </div>
+
+                    <div class="fs-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="fs-item-social-media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2nd-------------------------------------------- -->
+            <div class="fs-item-outer">
+                <div class="fs-item">
+
+                    <div class="fs-item-bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="fs-item-info">
+                        <div class="fs-item-info-icon">
+                            <i class="search-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="fs-item-info-data">
+                            Suspendisse cursus felis eu arcu dictum, eu accumsan orci porta. Fusce et pretium leo, quis
+                            sodales quam. Ut auctor sodales tellus in molestie. Vivamus semper quam nec nibh posuere, a
+                            elementum nulla placerat.
+                        </div>
+                    </div>
+
+                    <div class="fs-item-img">
+                        <img src="images/shoes.jpg" alt="Shoes" height="200">
+                    </div>
+
+                    <div class="fs-item-h">
+                        <h2>Fashon Shoes</h2>
+
+                    </div>
+
+                    <div class="fs-item-p">
+                        <p>Colorful Hamburger Variations</p>
+                    </div>
+
+                    <div class="fs-item-tags-container">
+                        <div class="fs-item-tags">
+                            Fast Food
+                        </div>
+                        <div class="fs-item-tags">
+                            Restaurant
+                        </div>
+                    </div>
+
+                    <div class="fs-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="fs-item-social-media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 3rd----------------------------------------------- -->
+            <div class="fs-item-outer">
+                <div class="fs-item">
+
+                    <div class="fs-item-bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="fs-item-info">
+                        <div class="fs-item-info-icon">
+                            <i class="search-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="fs-item-info-data">
+                            Suspendisse cursus felis eu arcu dictum, eu accumsan orci porta. Fusce et pretium leo, quis
+                            sodales quam. Ut auctor sodales tellus in molestie. Vivamus semper quam nec nibh posuere, a
+                            elementum nulla placerat.
+                        </div>
+                    </div>
+
+                    <div class="fs-item-img">
+                        <img src="images/mountain_cycle.jpg" alt="burger" height="200">
+                    </div>
+
+                    <div class="fs-item-h">
+                        <h2>Mountain Biking</h2>
+
+                    </div>
+
+                    <div class="fs-item-p">
+                        <p>Colorful Hamburger Variations</p>
+                    </div>
+
+                    <div class="fs-item-tags-container">
+                        <div class="fs-item-tags">
+                            Fast Food
+                        </div>
+                        <div class="fs-item-tags">
+                            Restaurant
+                        </div>
+                    </div>
+
+                    <div class="fs-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="fs-item-social-media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 4th---------------------------------------- -->
+            <div class="fs-item-outer">
+                <div class="fs-item">
+
+                    <div class="fs-item-bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="fs-item-info">
+                        <div class="fs-item-info-icon">
+                            <i class="search-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="fs-item-info-data">
+                            Suspendisse cursus felis eu arcu dictum, eu accumsan orci porta. Fusce et pretium leo, quis
+                            sodales quam. Ut auctor sodales tellus in molestie. Vivamus semper quam nec nibh posuere, a
+                            elementum nulla placerat.
+                        </div>
+                    </div>
+
+                    <div class="fs-item-img">
+                        <img src="images/outside.jpg" alt="burger" height="200">
+                    </div>
+
+                    <div class="fs-item-h">
+                        <h2>Y&M Hamburger</h2>
+
+                    </div>
+
+                    <div class="fs-item-p">
+                        <p>Colorful Hamburger Variations</p>
+                    </div>
+
+                    <div class="fs-item-tags-container">
+                        <div class="fs-item-tags">
+                            Fast Food
+                        </div>
+                        <div class="fs-item-tags">
+                            Restaurant
+                        </div>
+                    </div>
+
+                    <div class="fs-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="fs-item-social-media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 5th----------------------------------------- -->
+            <div class="fs-item-outer">
+                <div class="fs-item">
+
+                    <div class="fs-item-bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="fs-item-info">
+                        <div class="fs-item-info-icon">
+                            <i class="search-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="fs-item-info-data">
+                            Suspendisse cursus felis eu arcu dictum, eu accumsan orci porta. Fusce et pretium leo, quis
+                            sodales quam. Ut auctor sodales tellus in molestie. Vivamus semper quam nec nibh posuere, a
+                            elementum nulla placerat.
+                        </div>
+                    </div>
+
+                    <div class="fs-item-img">
+                        <img src="images/burger.jpg" alt="burger" height="200">
+                    </div>
+
+                    <div class="fs-item-h">
+                        <h2>Y&M Hamburger</h2>
+
+                    </div>
+
+                    <div class="fs-item-p">
+                        <p>Colorful Hamburger Variations</p>
+                    </div>
+
+                    <div class="fs-item-tags-container">
+                        <div class="fs-item-tags">
+                            Fast Food
+                        </div>
+                        <div class="fs-item-tags">
+                            Restaurant
+                        </div>
+                    </div>
+
+                    <div class="fs-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="fs-item-social-media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <hr>
+
+    <!-- Navigation container with city pics -->
+    <div id="navigation-container">
+
+        <div id="n-header-container">
+            <div class="n-heading">
+                <h3>NAVIGATION</h3>
+            </div>
+            <div class="n-buttons">
+                <button class="prev-btn">&#60;</button><button class="next-btn">&#62;</button>
+            </div>
+        </div>
+
+        <div id="navigation-pic-container">
+
+            <div class="n-img">
+                <img class="n-pic" src="images/connecticut.jpg" alt="city">
+                <div class="n-text">
+                    <h2>CONNECTICUT</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+            </div>
+
+            <div class="n-img">
+                <img class="n-pic" src="images/new jersy.jpg" alt="city">
+                <div class="n-text">
+                    <h2>NEW JERSY</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="n-img">
+                <img class="n-pic" src="images/new_york.jpg" alt="city">
+                <div class="n-text">
+                    <h2>NEW YORK</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="register-container">
+        <br>
+        <h1>Register Your Company into Our Database</h1>
+        <p>Visitors can register to your portal as users and submit their own items. You can create different packages and by connecting with your
+            PayPal or Stripe account charge users for registration to your directory portal.
+        </p>
+        <button id="register-btn">Register now for free</button>
+    </div>
+
+    <div id="footer">
+        <div class="footer-copyright">
+            <p> &#169; 2021 Copyright by Bharat</p>
+        </div>
+        <div class="footer-page">
+            <h5>Home</h5>
+            <h5>Blog</h5>
+            <h5>Element</h5>
+            <h5>Features</h5>
+        </div>
+        <div class="footer-icon">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+
+
+
+
+    <!-- JQUERY CDN-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- SLICK SLIDER JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OUR JAVA SCRIPT -->
+    <script src="javascript.js"></script>
+
+
+
+</body>
+</html>

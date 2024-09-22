@@ -1,0 +1,618 @@
+/* RESETING CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 100%;
+}
+
+/* HEADER MAIN CONTAINER WHICH COVERS THE WHOLE PHOTO AND ITS PARTS */
+#header-container{
+    position: relative;
+}
+#header-container::before{
+    content: "" ;
+    position: absolute;
+    background-image: url('Image/fernand-de-canne-d0RsfpGYQig-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+}
+
+/* NAV BAR CSS --------------------------- */
+
+#nav-bar-container{
+    line-height:50px;
+    display: flex;
+    justify-content: flex-end;
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.164))
+}
+.drop-down{
+    display: flex;
+}
+.drop-btn{
+    display: none;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    font-size: 1.3rem;
+    padding: 0px 13px;
+}
+
+.nav-bar-items{
+    list-style: none;
+    display: flex;
+    margin: 0px 70px;
+}
+
+
+.nav-bar-items li a{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+.nav-bar-items li a:active{
+    background:linear-gradient(transparent,black)
+}
+
+
+/* Header Content -------------------------------------*/
+
+/* Header Content Text */
+
+#header-content-container{
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    
+}
+#header-content{
+    margin: 5% 5%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: wrap;
+}
+
+
+/* HEADER TEXT CONTAINER */
+
+#header-text{
+    
+    color: white;
+    width: max(50%,100%);
+  
+    font-size: clamp(1vw,13px,16px);
+    margin:auto;
+}
+
+#header-text > *{
+   margin: 5%;
+}
+
+/* HEADER FORM MAIN CONTAINER ------------------------ */
+
+#header-form-container{
+    margin:auto;
+    background-color: white;
+    width: max(50%,100%);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER FROM CONTAINER */
+
+#header-form{
+    margin: auto;
+    width: 80%;
+}
+#header-container h2{
+    
+    margin: 5% ;
+    font-size: 1.5em;
+
+}
+
+#header-form select{
+    border:none;
+    margin: 2% 0%;
+    width: 100%;
+    padding: 1.3em;
+}
+
+#header-form select:focus{
+    outline: none;
+}
+
+
+#form-subcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#form-subcontainer select{
+    flex: 1;
+    margin-left: 1%;
+}
+
+/* MAIN BUTTON STYLES */
+.main-btn{
+    margin:2% 0% 4%;
+    background-color: rgb(233, 17, 17);
+    border-radius: 2px;
+    border-color: red;
+    color: white;
+    font-weight: bolder;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.main-btn:hover{
+    color: red;
+    background-color: white;
+}
+/* HOUSE PURPOSE HOME ---------------------------------- */
+
+#house-purpose-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.house-purpose > *{
+    padding: 1.6vh; 
+}
+
+.house-purpose{
+    
+    margin: 2% auto ;
+    background-color: #eee;
+    width: 20%;
+    
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.house-purpose i{
+    color: seagreen;
+    font-size: 2.4rem;
+}
+
+.house-purpose h3 {
+    font-weight: normal;
+}
+
+.house-purpose a{
+    color: red;
+    margin-bottom: 3vh;
+}
+
+/* DETAIL CONTAINER --------------------------------------*/
+
+#detail-container{
+    
+    background-image: url('Image/outsite-co-R-LK3sqLiBw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+/* DETAIL CARD ---------*/
+#detail-card{
+    
+    width: 70%;
+    margin: 4%;
+    background-color: white;
+    padding: 2% 5%;
+}
+
+#detail-card h2{
+   
+  margin: 3% 0px;
+  
+}
+
+#detail-icon-container{
+    
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 2% 0px;
+}
+.detail-icon{
+    flex-grow: 1;
+}
+
+#detail-icon-container i{
+
+    font-size: clamp(14px,1.7vw,2.5em);
+    margin: 3% 0%;
+    
+    color: rgb(64, 224, 149);
+}
+
+
+/* --------------------------------------------------------------------- */
+
+/* House card Section */
+#house-card-section{
+    padding: 5% 10%;
+}
+
+/* HOUSE CARD HEADER */
+.house-header{
+    font-size: clamp(20px,1.9vw,2vw);
+    text-align: center;
+    margin: 2% 0px ;
+}
+
+/* HOUSE CARD  */
+.house-card{
+    margin: 10px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.house-card > div{
+    font-size:1rem;
+    margin: 10px 0px;
+}
+
+/* HOUSE CARD IMAGE */
+
+.house-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.house-img{
+    position: relative;
+}
+
+/* HOUSE CARD PRICE AND RATING CONTAINER */
+.house-price-container{
+    display: flex;
+    color: red;
+    justify-content: space-between;
+    padding: 10px ;
+}
+.fa-heart{
+    color: grey;
+}
+
+/* HOUSE CARD ICON */
+.house-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.house-icon i{
+    color:teal;
+}
+
+/* HOUSE STATUS */
+.house-status{
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    right: 0px;
+    background-color: green;
+    color: white;
+    
+}
+/* HOUSE BOTTOM BUTTON */
+.house-btn button{
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    background-color: darkblue;
+    padding: 13px;
+}
+
+/* HOUSE ADDRESS */
+.house-address{
+    padding: 0px 20px;
+}
+
+/* HOUSE CARDS SLIDER BUTTON */
+.slick-prev:before,
+.slick-next:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border:1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    font-weight: normal;
+}
+
+/* CUSTOMER REVIEW SECTION ---------------------------------------- */
+
+#customers-review-section{
+    
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CUSTOMER REVIEW BOX */
+
+.customers-review-box{
+    width: 50%;
+    margin: 4%;
+    
+}
+
+
+
+.customers-review{
+    
+    margin: 2.5%;
+    color: rgb(0, 110, 255);
+    background: white;
+    padding: 3%;
+}
+
+.customers-review p {
+    margin: 2%;
+}
+
+.customers-review p span{
+    color: black;
+}
+
+.customers-link{
+    color: red;;
+}
+
+/* COLLECTION SECTION------------------------------- */
+#Collection-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.collection-container{
+    
+    display: flex;
+    margin: 4% 0px ;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+}
+
+.collection{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    
+    flex-basis: 300px;
+    margin: 2% 0px;
+    
+}
+.collection-header{
+    margin-top: 3%;
+}
+.collection-img img{
+    width: 100%;
+}
+
+.collection-text-container{
+    font-size: 1rem;
+    
+    padding: 5%;
+}
+
+.collection-text-container h2{
+    color: red;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+}
+.collection-text-container h1{
+    font-size: 1.5rem;
+}
+.collection-text-container p{
+    margin-top: 2%;
+}
+
+/* CONTACT SECTION ---------------------------------------*/
+#contact-section{
+    border:solid transparent;
+    position: relative;
+}
+
+#contact-section::before{
+    content: "";
+    background-image: url('Image/contact.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+#contact-container{
+    font-size: clamp(12px,2vw,1em);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin:5% auto;
+    background-color: white;
+    width: 35%;
+}
+#contact-container p{
+    margin: 3% 0px;
+}
+
+#contact-container button{
+    margin: 5% 0px;
+}
+
+/* FOOTER ------------------------------------------- */
+
+#footer{
+    color:white;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-item{
+    flex-grow: 1;
+    margin: 2% 0%;
+
+    
+}
+
+#f-item1{
+    margin: auto;
+    flex-grow: 2;
+}
+#f-item1 h2{
+    color:  red;
+    margin: 5px 0px;
+}
+
+.footer-links{
+    padding: 40px 10px;
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    color: grey;
+}
+
+/* NEW MEDIA */
+
+
+@media screen  and (max-width:1200px){
+    #header-content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    #house-purpose-container{
+        flex-direction: column;
+    }
+    .house-purpose{
+        width: 50%;
+    }
+    
+}
+
+
+
+@media screen  and (max-width:640px){
+    #header-content{
+        margin: 12% 5%;
+    }
+    #nav-bar-container{
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        
+        z-index: 2;
+        flex-direction: column;
+    }
+    .drop-btn{
+        margin: 1%;
+        padding: 1%;
+        border-radius: 5px;
+        display: block;
+    }
+    .drop-down{
+        text-align: center;
+        display: none;
+        flex-direction: column;
+    }
+    .nav-bar-items{
+        flex-direction: column;
+    }
+    .drop-btn:hover + .drop-down  {
+        display: flex;
+        
+    }
+
+    #contact-container{
+        width: 80%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

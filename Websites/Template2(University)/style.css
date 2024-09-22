@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+
+
+/* CSS RESETING */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* cSS COLORS */
+
+:root{
+    --primary-clr:rgb(13, 17, 40);
+    --secondary-clr:rgb(253, 97, 0);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* NAV BAR CSS-------------------------------------------------- */
+/* MAIN NAV CONTAINER ----------------- */
+#nav-bar{
+    margin: 0px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV CONTACT CONTAINER---------------- */
+.nav-contact-container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu{
+    display: none;
+    color: white;
+}
+
+
+
+.nav-contact-item a{
+    text-decoration: none;
+    color: black;
+}
+.nav-contact-item a h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.nav-contact-item{
+    display: flex;
+    align-items: center;
+}
+
+.nav-contact-item .fas{
+    color: var(--secondary-clr);
+    font-size: 1.5rem;
+    margin-right: 6%;
+}
+
+#nav-btn{
+    font-size: 1rem;
+    padding: 1em;
+    margin: auto 0px;
+    color: white;
+    border:2px solid var(--secondary-clr);
+    font-weight: bolder;
+    background-color: var(--secondary-clr);
+}
+
+#nav-btn:hover{
+    color: var(--secondary-clr);
+    background-color: white;
+}
+
+
+/* NAV MENU CONTAINER---------------- */
+.nav-menu-container{
+    display: flex;
+    background-color: var(--primary-clr);
+}
+
+.nav-menu{
+    justify-content: space-evenly;
+    display: flex;
+    flex-grow: 2;
+    list-style: none;
+}
+
+.nav-menu li{
+    padding: 2%;
+}
+.nav-menu a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+.nav-menu a:active{
+    color: var(--secondary-clr);
+}
+/* NAV SEARCH BAR---------------------- */
+.nav-search-bar{
+    position: relative;
+    flex-grow: 1;
+}
+
+#nav-search{
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+    border:1px solid rgba(238, 238, 238, 0.349) ;
+    margin-top: 1%;
+    border-radius: 50px;
+    padding-left: 10%;
+    height: 80%;
+    width: 100%;
+}
+
+#nav-search:focus{
+    outline: none;
+}
+
+.nav-search-bar .fa-search{
+    color: white;
+    position: absolute;
+    top:25%;
+    right: 10%;
+    font-size: 1.5rem;
+}
+
+/* MAIN PAGE------------------------------------- */
+
+
+#main-page{
+    position: relative;
+    overflow: hidden;
+    border:2px solid transparent;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.267),rgba(255, 166, 0, 0.274));
+}
+
+.main-img img{
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-page-text{
+    
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 10%; 
+}
+
+.main-page-text h1{
+    font-size: 2.5rem;
+}
+.main-page-text p{
+    margin: 3% 0%;
+    max-width: 45ch;
+    font-size: 1.1rem;
+}
+
+.main-btn{
+    font-weight: bolder;
+    color: white;
+    border:2px solid var(--secondary-clr);
+    border-radius: 50px;
+    background-color: var(--secondary-clr);
+    font-size: 1.1rem;
+    padding: 1em 1.5em;
+}
+
+.main-btn:hover{
+    color: var(--secondary-clr);
+    background-color: white;
+}
+
+/* Specification container -------------------- */
+#specification-container{
+    display: flex;
+}
+.spec-items{
+    color: white;
+    padding: 3%;
+    text-align: center;
+}
+
+.spec-items i{
+    font-size: 2.5rem;
+    margin: 1rem 0px;
+}
+
+.spec-items h1{
+    margin: 1rem;
+}
+
+#spec-item1,#spec-item3{
+    background-color: var(--secondary-clr);
+}
+#spec-item2,#spec-item4{
+    background-color: var(--primary-clr);
+}
+/*  INFO SECTION ---------------------------- */
+#info-section{
+    display: flex;
+}
+
+
+#info-container-2{
+    width: 500px;
+    margin: auto;
+}
+
+#info-container-2 img{
+    width: 100%;
+}
+
+/* ------------------------------------ */
+/* Info Container 1 */
+#info-container-1{
+    max-width: 50%;
+    margin: 4% auto;
+    
+}
+#info-container-1 p{
+    margin: 2% 0px;
+}
+.info-sub-container{
+    margin: 10% 0px;
+    height: 80%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.info{
+    
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-icon{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-clr);
+}
+.info-icon .fas{
+    color: white;
+    font-size: 2.6rem;
+}
+.info-text{
+    width: 70%;
+}
+.info-text h2{
+    font-weight:normal;
+}
+
+/* CAMPUS CONTAINER------------------------------------- */
+
+#campus-section{
+    position: relative;
+    display: flex;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.301),rgba(236, 95, 13, 0.747));
+    flex-direction: column;
+    color: white;
+}
+
+#campus-section::before{
+    content: "";
+    background:url('images/campus-bg.jpg');
+    position: absolute;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+
+}
+/* CAMPUS CONTAINER------------- */
+.campus-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% 0px;
+}
+.campus-video{
+    width: 40%;
+}
+.campus-video img{
+    width: 100%;
+}
+.campus-text{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 55ch;
+}
+
+/* CAMPUS RECORD---------------- */
+.campus-record{
+
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 3% 0px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+/* COURSE SECTION---------------------  */
+
+
+.course-header{
+    margin: 3% 0px;
+    text-align: center;
+}
+.course-header h1{
+    font-size: 3rem;
+    margin: 2%;
+
+}
+.c-card{
+    font-family: 'Poppins', sans-serif;
+    width: 20%;
+    font-size: 0.9rem;
+    
+}
+.c-card-img img{
+    width: 100%;
+}
+
+.c-card-icon{
+    margin: 2% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-card-icon .fas{
+    color:var(--secondary-clr);
+}
+.c-card p{
+    margin:2% 0px 6% 0%;
+    line-height: 2rem;
+}
+
+.c-card .main-btn{
+    padding: 0.5em 1em;
+}
+
+.course-card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* TEACHERS SECTIONS------------------------ */
+#teacher-section{
+    margin-top: 10rem;
+    padding: 1% 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+    text-align: center;
+}
+
+.teacher-header{
+    margin: 5% 0% 4% 0%;
+    font-size:3rem;
+    
+}
+
+.teacher-container{
+    margin: 2% 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.teacher-card{
+    
+    background-color: white;
+    line-height: 2em;
+    text-align: center;
+    width: 20%;
+    min-width: 200px;
+}
+
+.teacher-card img{
+    width: 100%;
+}
+.teacher-card h3{
+    color: var(--secondary-clr);
+}
+
+/* REGISTERATION SECTION ------------------------------- */
+#register-section{
+
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.329),rgba(255, 166, 0, 0.322)), url('images/register.jpg');
+    background-size: cover;
+    border:1px solid transparent;
+   
+}
+
+.register-container{
+    
+    width: 50%;
+    margin: 7em 8% 7em auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#register-form{
+    
+    margin: 5% 0%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.r-form-items{
+    padding: 1em;
+    font-size: 1.4rem;
+    color: white;
+    background-color: transparent;
+    border:transparent;
+    width: 48%;
+    border-bottom: 2px solid white;
+    
+}
+#register-form input:focus{
+    outline: none;
+}
+
+#register-form select:focus{
+    outline: none;
+}
+.r-form-items::placeholder{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.r-form-items .main-btn:hover{
+    
+    background-color: transparent;
+}
+
+/* RECENT BLOG SECTION---------------------------------- */
+
+#blog-section{
+    border:1px solid transparent;
+    background-color: #eee;
+}
+.blog-header{
+    text-align: center;
+}
+.blog-header h1{
+    margin: 2% 0%;
+    font-size: 3rem;
+}
+.blog-header p{
+    max-width: 75ch;
+    margin: 3% auto;
+}
+.blog-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6% 0px;
+}
+.blog-card{
+    background-color: white;
+    width: 400px;
+}
+.blog-card img{
+    width: 100%;
+}
+.blog-text{
+    padding: 1em;
+}
+
+.blog-text h2{
+    font-weight: normal;
+}
+.blog-text p{
+    margin: 1.3em 0px;
+    line-height: 1.7em;
+}
+.blog-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-footer span{
+    color: var(--secondary-clr);
+}
+.blog-footer .main-btn{
+    padding: 0.5em 1em;
+}
+
+/* STUDENTS REVIEWS-------------------------------------- */
+#review-section{
+    border:2px solid transparent;
+}
+.review-header{
+    text-align: center;
+    margin: 5%;
+}
+.review-header h1{
+    font-size: 3rem;
+}
+.review-header p{
+   
+    max-width: 65ch;
+    margin: 4% auto;
+}
+.review-container{
+    display: flex;
+    margin: 6% 0% 10% 0%;
+    
+}
+.review-txt{
+    line-height: 2rem;
+    padding: 0% 3%;
+    margin-right: auto;
+    max-width: 45ch;
+}
+.review-img{
+    margin-left: auto;
+}
+.review-img img{
+    height: 120px;
+    border-radius: 50%;
+    width: 120px;
+    object-fit: cover;
+}
+
+.review-txt h3{
+    font-weight:500;
+}
+.review-txt span{
+    color: var(--secondary-clr);
+}
+
+/* IMAGE SECTION------------------------------- ------*/
+.image-section{
+    display: flex;
+}
+
+.img-box{
+    flex: 1;
+}
+
+.img-box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER--------------------------------------------- */
+
+#footer-section{
+    background-color:#212529;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-container{
+    margin: 5% 0px;
+    flex-basis: 20%;
+   
+    
+}
+.footer-item{
+    display: flex;
+    margin: 5% 0px;
+}
+.footer-item i{
+    margin-right:1em;
+}
+
+.footer-container h1{
+    margin: 1em 0px;
+    font-weight: normal;
+    font-size: 1.7rem;
+}
+.footer-blog-text i{
+    margin: 1.5em 0px;
+    color: rgb(158, 157, 157);
+    font-size: 0.8rem;
+}
+
+.footer-img{
+    margin-right: 5%;
+    width: 100px;
+    height: 100px;
+}
+.footer-img img{
+    width: 100%;
+}
+
+.links{
+    padding: 3%;
+    list-style: none;
+    color: rgb(158, 157, 157);
+}
+
+#subscribe{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#subscribe input{
+    background-color: rgba(29, 28, 28, 0.644);
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    padding: 1em;
+    margin: 2px;
+    border:none;
+}
+#subscribe input:focus{
+    outline: none;
+}
+
+#subscribe input[type="button"]{
+    background-color: blue;
+}
+
+#subscribe input[type="button"]:hover{
+    background-color: var(--secondary-clr);
+}
+
+.social h1{
+    margin: 1em 0px;
+    font-size: 1.6rem;
+}
+
+.social i{
+    background-color: rgba(65, 62, 62, 0.308);
+    padding:0.3em ;
+    border-radius: 50%;
+    color: white;
+    margin: 0px 2%;
+    font-size: 1.6rem
+}
+
+.copyright{
+    text-align: center;
+    color:white;
+    background-color:#212529;
+}
+
+
+/* MEDIA QUERY--------------------------------------------- */
+@media screen and (max-width:980px){
+    #nav-bar{
+        margin: 0px;
+    }
+    .info-sub-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .info{
+        width: 100%;
+    }
+    #info-container-2{
+        width: 500px;
+        margin: auto;
+    }
+    
+    #info-container-2{
+        width: 40%;
+        height: 100vh;
+    }
+    
+    #info-container-2 img{
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    #specification-container,.campus-container,.course-card-container{
+        flex-direction: column;
+        
+    }
+    .c-card{
+        margin:5% 0px;
+        width: 100%;
+    }
+    .blog-card-container,.image-section,#footer-section{
+        flex-direction: column;
+        padding: 0px 5%;
+    }
+
+    .blog-card{
+        margin: 3% auto;
+        width: 80%;
+    }
+    #nav-contact-container-1{
+        flex-direction: column;
+        padding: 0px 0px 0px 5%;
+    }
+    #nav-btn{
+        align-self: flex-end;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+    }
+    .n-list{
+        display: none;
+    }
+    #menu{
+        display: block ;
+        font-size: 1.7rem;
+    }
+    #menu:hover ~ .n-list{
+        display: block;
+    }
+    .nav-search-bar{
+        align-self: flex-start;
+    }
+    #nav-search{
+        padding: 1em;
+    }
+
+    #register-form{
+        flex-direction: column;
+    }
+    .register-container{
+        width: 80%;
+    }
+    .r-form-items{
+        width: 70%;
+    }
+   
+}
+
+@media screen and (max-width:640px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    .review-container{
+        
+        flex-direction: column;
+    }
+    .review-img{
+        margin: auto;
+    }
+    #info-container-1{
+        max-width: 90%;
+    }
+    #info-container-2{
+       display: none;
+    }
+}
